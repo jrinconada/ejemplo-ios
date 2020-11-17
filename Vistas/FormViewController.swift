@@ -39,8 +39,20 @@ class FormViewController: UIViewController {
     
     @IBAction func accept(_ sender: Any) {
         let name = nameTextField.text!
+        
+        if name.isEmpty {
+            showError()
+            return
+        }
+        
         UserDefaults.standard.set(name, forKey: "name")
         
         dismiss(animated: true)
+    }
+    
+    func showError() {
+        let alert = UIAlertController(title: "Error", message: "Debes rellenar el nombre", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Cerrar"), style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
