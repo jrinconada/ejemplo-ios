@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
-        print("botón pulsado!!!!!")
         gretting.text = "Has pulsado el botón"
         
         toggle()
