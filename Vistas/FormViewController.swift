@@ -6,6 +6,7 @@ class FormViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var surnameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +42,7 @@ class FormViewController: UIViewController {
     @IBAction func accept(_ sender: Any) {
         let name = nameTextField.text!
         
-        if name.isEmpty || surnameTextField.text!.isEmpty {
+        if name.isEmpty || surnameTextField.text!.isEmpty || emailTextField.text!.isEmpty {
             showError()
             return
         }

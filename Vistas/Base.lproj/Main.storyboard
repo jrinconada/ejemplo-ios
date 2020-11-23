@@ -215,6 +215,7 @@
                     <navigationItem key="navigationItem" id="eYC-g8-xLT"/>
                     <connections>
                         <outlet property="age" destination="u3Q-di-bGs" id="yDY-v2-OnF"/>
+                        <outlet property="emailTextField" destination="PPH-ed-X1M" id="kqf-sG-StX"/>
                         <outlet property="nameTextField" destination="vHj-OL-FGx" id="quF-Fx-ScW"/>
                         <outlet property="surnameTextField" destination="RWM-HH-Lid" id="9na-pf-tMu"/>
                     </connections>
