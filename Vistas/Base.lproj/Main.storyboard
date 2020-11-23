@@ -216,6 +216,7 @@
                     <connections>
                         <outlet property="age" destination="u3Q-di-bGs" id="yDY-v2-OnF"/>
                         <outlet property="nameTextField" destination="vHj-OL-FGx" id="quF-Fx-ScW"/>
+                        <outlet property="surnameTextField" destination="RWM-HH-Lid" id="9na-pf-tMu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKQ-5b-LTN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

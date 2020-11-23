@@ -5,6 +5,7 @@ class FormViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var age: UILabel!
+    @IBOutlet weak var surnameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,7 @@ class FormViewController: UIViewController {
     @IBAction func accept(_ sender: Any) {
         let name = nameTextField.text!
         
-        if name.isEmpty {
+        if name.isEmpty || surnameTextField.text!.isEmpty {
             showError()
             return
         }
@@ -51,7 +52,7 @@ class FormViewController: UIViewController {
     }
     
     func showError() {
-        let alert = UIAlertController(title: "Error", message: "Debes rellenar el nombre", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Error", message: "Debes rellenar todos los campos", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Cerrar"), style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
